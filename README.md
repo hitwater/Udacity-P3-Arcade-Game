@@ -1,6 +1,9 @@
-frontend-nanodegree-arcade-game
-===============================
+#Classic Arcade Game#
 
-Students should use this [rubric](https://www.udacity.com/course/viewer/#!/c-nd001/l-2696458597/m-2687128535) for self-checking their submission.
+**Game Start**
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+Once you open this page, the game will begin.
+
+**Play Guideline**
+
+Use the arrow keys to control the character to move up, down, left, and right. When you reach the water on the top, the character will go back to the initial position. The character will go back when it hit a bug.
