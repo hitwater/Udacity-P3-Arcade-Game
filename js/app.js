@@ -1,4 +1,7 @@
 // Enemies our player must avoid
+var TILE_WIDTH = 101,
+    TILE_HEIGHT = 83;
+
 var Enemy = function(x,y,vel) {
     // Initial positions and velocities for enemies
     this.x=x;
@@ -61,19 +64,19 @@ var Player = function() {
 // Update the player's position, required method for game
 Player.prototype.update = function() {
     if (this.x<-5){
-        player.x=-5;
+        this.x=-5;
     }else if(this.x>400){
-        player.x=400;
+        this.x=400;
     }
     else if (this.y>450){
-        player.y=400;
+        this.y=400;
     }else if(this.y<-14){
-        player.reset();
+        this.reset();
     }
     else{
            this.x=this.x;
            this.y=this.y;
-    };
+    }
 };
 
 // Draw the player on the screen
@@ -84,19 +87,19 @@ Player.prototype.render = function() {
 // Control the player's position with arrow keys on the screen
 Player.prototype.handleInput = function(key) {
     if (key=='up'){
-        this.y=this.y-83*1;
+        this.y=this.y-TILE_HEIGHT;
     } else if(key=='down'){
-       this.y=this.y+83*1;
+       this.y=this.y+TILE_HEIGHT;
     } else if(key=='left'){
-       this.x=this.x-101*1;
+       this.x=this.x-TILE_WIDTH;
     } else if(key=='right'){
-       this.x=this.x+101*1;
-    };
+       this.x=this.x+TILE_WIDTH;
+    }
+};
 // Reset the player's position
 Player.prototype.reset = function() {
            this.x=200;
            this.y=400;
-    };
 };
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies

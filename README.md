@@ -2,7 +2,7 @@
 
 **Game Start**
 
-Once you open this page, the game will begin.
+Once you open index.html in your browser, the game will begin.
 
 **Play Guideline**
 
